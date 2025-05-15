@@ -1,0 +1,485 @@
+<<<<<<< HEAD
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios de Impacto CEAP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+      color: #1f2937;
+    }
+
+    .header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .header button {
+      background: white;
+      color: #4f46e5;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .header button:hover {
+      background-color: #ef4444;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .header-title i {
+      font-size: 1.5rem;
+    }
+
+    .main {
+      padding: 30px 40px;
+    }
+
+    .titulo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .subtitulo {
+      font-size: 1rem;
+      color: #6b7280;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .tab {
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      font-weight: 600;
+      color: #4f46e5;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab:hover,
+    .tab.active {
+      background-color: #eef2ff;
+      border-color: #4f46e5;
+    }
+
+    .dash {
+      height: 300px;
+      background-color: white;
+      border: 2px dashed #cbd5e1;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #9ca3af;
+      margin-bottom: 24px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card i {
+      font-size: 1.5rem;
+    }
+
+    .chatbot-box {
+      background-color: #eef2ff;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .chatbot-box h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 10px;
+    }
+
+    .chatbot-box p {
+      color: #6b7280;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .chatbot-box button {
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .chatbot-box button:hover {
+      background-color: #4338ca;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <button onclick="window.location.href='index.html'">&larr; Voltar</button>
+    <div class="header-title">
+      <i>📊</i> Relatórios de Impacto CEAP
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="titulo">Relatórios de Impacto CEAP</div>
+    <div class="subtitulo">Acompanhe os principais indicadores das empresas parceiras:</div>
+
+    <div class="tabs">
+      <div class="tab active">Geral</div>
+      <div class="tab">Empresa A</div>
+      <div class="tab">Empresa B</div>
+    </div>
+
+    <div class="dash">
+      <div style="font-size: 2rem; margin-bottom: 10px;">📈</div>
+      <strong>Área reservada para o dashboard do Power BI</strong>
+      <p style="font-size: 0.9rem; color: #9ca3af;">Os dados serão carregados automaticamente</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <span>Empresas Parceiras:</span>
+        <i>🏢</i>
+      </div>
+      <div class="card">
+        <span>Projetos Ativos:</span>
+        <i>📋</i>
+      </div>
+      <div class="card">
+        <span>Investimento Total:</span>
+        <i>💰</i>
+      </div>
+      <div class="card">
+        <span>Impacto Social:</span>
+        <i>🧑‍🤝‍🧑</i>
+      </div>
+    </div>
+
+    <div class="chatbot-box">
+      <h3>Assistente Inteligente de Dados</h3>
+      <p>Faça perguntas e obtenha insights instantâneos sobre métricas, tendências<br> e comparações dos dados das empresas parceiras.</p>
+      <button onclick="abrirAgenteIA()">Começar Conversa</button>
+    </div>
+  </div>
+
+  <div id="overlay-agente" onclick="fecharAgenteIA()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.3); z-index:9999;">
+    <div onclick="event.stopPropagation()" style="position:absolute; top:0; right:0; width:40%; height:100%; background:white; box-shadow:-4px 0 10px rgba(0,0,0,0.1); overflow:auto;">
+      <iframe src="agenteIA-fake.html" style="width:100%; height:100%; border:none;"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function abrirAgenteIA() {
+      document.getElementById("overlay-agente").style.display = "block";
+    }
+
+    function fecharAgenteIA() {
+      document.getElementById("overlay-agente").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
+=======
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios de Impacto CEAP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+      color: #1f2937;
+    }
+
+    .header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .header button {
+      background: white;
+      color: #4f46e5;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .header button:hover {
+      background-color: #ef4444;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .header-title i {
+      font-size: 1.5rem;
+    }
+
+    .main {
+      padding: 30px 40px;
+    }
+
+    .titulo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .subtitulo {
+      font-size: 1rem;
+      color: #6b7280;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .tab {
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      font-weight: 600;
+      color: #4f46e5;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab:hover,
+    .tab.active {
+      background-color: #eef2ff;
+      border-color: #4f46e5;
+    }
+
+    .dash {
+      height: 300px;
+      background-color: white;
+      border: 2px dashed #cbd5e1;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #9ca3af;
+      margin-bottom: 24px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card i {
+      font-size: 1.5rem;
+    }
+
+    .chatbot-box {
+      background-color: #eef2ff;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .chatbot-box h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 10px;
+    }
+
+    .chatbot-box p {
+      color: #6b7280;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .chatbot-box button {
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .chatbot-box button:hover {
+      background-color: #4338ca;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <button onclick="window.location.href='index.html'">&larr; Voltar</button>
+    <div class="header-title">
+      <i>📊</i> Relatórios de Impacto CEAP
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="titulo">Relatórios de Impacto CEAP</div>
+    <div class="subtitulo">Acompanhe os principais indicadores das empresas parceiras:</div>
+
+    <div class="tabs">
+      <div class="tab active">Geral</div>
+      <div class="tab">Empresa A</div>
+      <div class="tab">Empresa B</div>
+    </div>
+
+    <div class="dash">
+      <div style="font-size: 2rem; margin-bottom: 10px;">📈</div>
+      <strong>Área reservada para o dashboard do Power BI</strong>
+      <p style="font-size: 0.9rem; color: #9ca3af;">Os dados serão carregados automaticamente</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <span>Empresas Parceiras:</span>
+        <i>🏢</i>
+      </div>
+      <div class="card">
+        <span>Projetos Ativos:</span>
+        <i>📋</i>
+      </div>
+      <div class="card">
+        <span>Investimento Total:</span>
+        <i>💰</i>
+      </div>
+      <div class="card">
+        <span>Impacto Social:</span>
+        <i>🧑‍🤝‍🧑</i>
+      </div>
+    </div>
+
+    <div class="chatbot-box">
+      <h3>Assistente Inteligente de Dados</h3>
+      <p>Faça perguntas e obtenha insights instantâneos sobre métricas, tendências<br> e comparações dos dados das empresas parceiras.</p>
+      <button onclick="abrirAgenteIA()">Começar Conversa</button>
+    </div>
+  </div>
+
+  <div id="overlay-agente" onclick="fecharAgenteIA()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.3); z-index:9999;">
+    <div onclick="event.stopPropagation()" style="position:absolute; top:0; right:0; width:40%; height:100%; background:white; box-shadow:-4px 0 10px rgba(0,0,0,0.1); overflow:auto;">
+      <iframe src="agenteIA-fake.html" style="width:100%; height:100%; border:none;"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function abrirAgenteIA() {
+      document.getElementById("overlay-agente").style.display = "block";
+    }
+
+    function fecharAgenteIA() {
+      document.getElementById("overlay-agente").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
+>>>>>>> d8987423595ab885ae0d2ef4b26cd40c713de43f
