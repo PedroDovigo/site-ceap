@@ -107,9 +107,9 @@
     function validarLogin() {
       const usuario = document.getElementById("email").value.trim().toLowerCase();
       const senha = document.getElementById("senha").value.trim();
-      const permitidos = ["pietra", "pedro", "duda", "rayssa","ray"];
+      const permitidos = ["a","pietra", "pedro", "duda", "rayssa","ray"];
 
-      if (permitidos.includes(usuario) && senha === "ceap") {
+      if (permitidos.includes(usuario) && senha === "ceap","a") {
         window.location.href = "home.html";
       } else {
         alert("Usuário ou senha inválidos.");

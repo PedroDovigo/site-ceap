@@ -841,16 +841,17 @@
     historico.forEach((item, index) => {
       const tr = document.createElement("tr");
       tr.innerHTML = `
-        <td>${item.data}</td>
-        <td>${item.instituicao}</td>
-        <td>${item.nome} (${item.email})</td>
-        <td>${item.tipo}</td>
-        <td>${item.status || 'Pendente'}</td>
-        <td>
-          <button onclick="verProposta('${item.query}')">Visualizar</button>
-          <button onclick="excluirProposta(${index})" style="color:red">Excluir</button>
-        </td>
-      `;
+  <td>${item.data}</td>
+  <td>${item.instituicao}</td>
+  <td>${item.email}</td>
+  <td>${item.tipo}</td>
+  <td>${item.status || 'Pendente'}</td>
+  <td>
+    <button onclick="verProposta('${item.query}')">Visualizar</button>
+    <button onclick="excluirProposta(${index})" style="color:red">Excluir</button>
+  </td>
+`;
+
       tbody.appendChild(tr);
     });
   }
